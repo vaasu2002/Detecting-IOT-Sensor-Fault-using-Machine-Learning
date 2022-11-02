@@ -1,1 +1,1 @@
-# Detecting-IOT-Sensor-Failures-using-Machine-Learning
+# Detecting IOT Sensor Failures using Machine Learning

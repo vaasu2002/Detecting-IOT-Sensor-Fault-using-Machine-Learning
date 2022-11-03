@@ -35,8 +35,4 @@ class TrainPipeline:
         try:
             data_ingestion_artifact:DataIngestionArtifact = self.start_data_ingestion()
         except Exception as e:
-            raise SensorException(e,sys)
-
-
-    
-        
+            raise SensorException(e,sys)        

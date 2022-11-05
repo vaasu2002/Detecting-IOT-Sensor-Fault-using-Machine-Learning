@@ -1,7 +1,7 @@
 import certifi
 import pymongo
 from sensor.constant.database import DATABASE_NAME#,MONGODB_URL_KEY
-MONGODB_URL_KEY = "mongodb+srv://vaasu:***********@.r5ecagf.mongodb.net/?retryWrites=true&w=majority"
+MONGODB_URL_KEY = "mongodb+srv://vaasu:pcvaasu9dps@cluster0.bf8jljh.mongodb.net/?retryWrites=true&w=majority"
 ca = certifi.where()
 
 class MongoDBClient:

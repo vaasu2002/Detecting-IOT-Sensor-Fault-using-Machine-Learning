@@ -8,11 +8,13 @@ from sensor.entity.config_entity import DataIngestionConfig
 from sensor.exception import SensorException
 from sensor.logger import logging
 from sensor.data_access.sensor_data import SensorData
-
+from sensor.utils.main_utils import read_yaml_file
+from sensor.constant.training_pipeline import SCHEMA_FILE_PATH
 class DataIngestion: 
     def __init__(self, data_ingestion_config:DataIngestionConfig):
         try:
             self.data_ingestion_config = data_ingestion_config
+            self._scgema_config = read_yaml_file(SCHEMA_FILE_PATH)
         except Exception as e:
             raise SensorException(e,sys)
 
@@ -88,6 +90,10 @@ class DataIngestion:
 
         try:
             dataframe = self.export_data_into_feature_store()
+
+            dataframe = dataframe.drop(self._scgema_config['drop_columns'],axis=1)
+
+            logging.info(f"Shape of dataframe after dropping rows: {dataframe.shape}")
 
             logging.info("Got the data from MongoDB")
         

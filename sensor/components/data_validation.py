@@ -21,7 +21,7 @@ class DataValidation:
 
     def validate_number_of_columns(self,dataframe:pd.DataFrame)->bool:
         try:
-            number_of_columns = self._schema_config["columns"]
+            number_of_columns = len(self._schema_config["columns"])
 
             if(len(dataframe.columns) == number_of_columns):
                 return True
@@ -36,7 +36,7 @@ class DataValidation:
 
     def is_numerical_column_exist(self,dataframe:pd.DataFrame)->bool:
         try:
-            numerical_columns = len(self._schema_config["numerical_columns"])
+            numerical_columns = self._schema_config["numerical_columns"]
             dataframe_columns = dataframe.columns
             numerical_column_present = True
             misssing_numerical_column = []

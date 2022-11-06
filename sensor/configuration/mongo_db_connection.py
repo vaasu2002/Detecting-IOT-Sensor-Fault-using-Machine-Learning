@@ -2,6 +2,7 @@ import certifi
 import pymongo
 from sensor.constant.database import DATABASE_NAME#,MONGODB_URL_KEY
 
+
 ca = certifi.where()
 
 class MongoDBClient:

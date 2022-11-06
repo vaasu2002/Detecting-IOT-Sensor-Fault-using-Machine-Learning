@@ -82,7 +82,7 @@ class DataValidation:
             # Create Directory
             dir_path=os.path.dirname(drift_report_file_path)
 
-            os.mkdir(dir_path,exist=True)
+            os.makedirs(dir_path,exist_ok=True)
 
             write_yaml_file(file_path=drift_report_file_path,content=report)
             return status
@@ -103,8 +103,18 @@ class DataValidation:
             test_file_path = self.data_ingestion_artifact.test_file_path
 
             # reading data from train and test file location
+
+
+            #print(train_file_path)
+            
+
+
             train_dataframe = DataValidation.read_data(train_file_path)
             test_dataframe = DataValidation.read_data(test_file_path)
+
+
+            #print(type(train_dataframe))
+
 
             # Validate number of columns in training dataframe
             status = self.validate_number_of_columns(dataframe=train_dataframe)
@@ -133,7 +143,7 @@ class DataValidation:
 
 
             # Validate numerical columns in testing dataframe
-            status = self.is_numerical_column_exist(dataframe = test_file_path)
+            status = self.is_numerical_column_exist(dataframe = test_dataframe)
             if not status:
                 error_message = f"{error_message}Test dataframe does not contain all numerical columns.\n"
             else:

@@ -7,11 +7,11 @@ git clone https://github.com/vaasu2002/Detecting-IOT-Sensor-Failures-using-Machi
 
 Step 2
 ```
-conda create -p env python==3.7.6 -y
+conda create -p sensors python==3.7.6 -y
 ```
 Step 3
 ```
-conda activate env/
+conda activate sensors/
 ```
 Step 4
 ```

@@ -5,7 +5,7 @@ VERSION="0.0.2"
 AUTHOR="Vaasu Bisht"
 DESRCIPTION="In this project I will be bulding a pipeline to train and test a machine learning model, I will try to use the format which is used in industry."
 
-REQUIREMENT_FILE_NAME="requirenments.txt"
+REQUIREMENT_FILE_NAME="requirements.txt"
 
 HYPHEN_E_DOT = "-e ."
 

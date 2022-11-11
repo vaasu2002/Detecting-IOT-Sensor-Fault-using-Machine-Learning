@@ -1,4 +1,4 @@
-# Detecting IOT Sensor Failures using Machine Learning
+# Detecting IOT Sensor Fault using Machine Learning
 
 Step 1
 ```
@@ -15,7 +15,7 @@ conda activate sensors/
 ```
 Step 4
 ```
-pip install -r requirements.txt
+python setup.py install
 ```
 
 

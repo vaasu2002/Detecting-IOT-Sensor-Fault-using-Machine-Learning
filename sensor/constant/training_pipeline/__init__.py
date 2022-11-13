@@ -23,6 +23,7 @@ SCHEMA_FILE_PATH = os.path.join("config", "schema.yaml")
 
 SCHEMA_DROP_COLS = "drop_columns"
 
+
 """
 Data Ingestion related constant start with DATA_INGESTION VAR NAME
 """
@@ -35,6 +36,7 @@ DATA_INGESTION_FEATURE_STORE_DIR: str = "feature_store"
 DATA_INGESTION_INGESTED_DIR: str = "ingested"
 
 DATA_INGESTION_TRAIN_TEST_SPLIT_RATION: float = 0.2
+
 
 """
 Data Validation realted contant start with DATA_VALIDATION VAR NAME
@@ -49,6 +51,7 @@ DATA_VALIDATION_INVALID_DIR: str = "invalid"
 DATA_VALIDATION_DRIFT_REPORT_DIR: str = "drift_report"
 
 DATA_VALIDATION_DRIFT_REPORT_FILE_NAME: str = "report.yaml"
+
 
 """
 Data Transformation ralated constant start with DATA_TRANSFORMATION VAR NAME
@@ -72,12 +75,11 @@ MODEL_TRAINER_TRAINED_MODEL_NAME: str = "model.pkl"
 MODEL_TRAINER_EXPECTED_SCORE: float = 0.6
 
 MODEL_TRAINER_MODEL_CONFIG_FILE_PATH: str = os.path.join("config", "model.yaml")
+
 """
 MODEL Evauation related constant start with MODEL_EVALUATION var name
 """
 
 MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE: float = 0.02
-
 MODEL_PUSHER_BUCKET_NAME = TRAINING_BUCKET_NAME
-
 MODEL_PUSHER_S3_KEY = "model-registry"

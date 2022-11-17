@@ -27,7 +27,19 @@ class TargetValueMapping:
 
 
 class SensorModel:
-    """
-    Will be used to evaluate model
-    """
-    pass
+    
+    def __init__(self,preprocessor,model):
+        self.preprocessor = preprocessor
+        self.model = model
+
+    def predict(self,x):
+        try:
+            x_transform =  self.preprocessor.transform(x)
+            y_hat = self.model.predict(x_transform)
+            return y_hat
+        except Exception as e:
+            raise e
+
+
+  
+

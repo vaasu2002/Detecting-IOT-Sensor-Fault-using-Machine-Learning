@@ -2,7 +2,7 @@ import certifi
 import pymongo
 from sensor.constant.database import DATABASE_NAME#,MONGODB_URL_KEY
 
-MONGODB_URL_KEY = "mongodb+srv://vaasu:*****@cluster0.wydi0u7.mongodb.net/?retryWrites=true&w=majority"
+MONGODB_URL_KEY = "mongodb+srv://vaasu:pcvaasu9dps@cluster0.wydi0u7.mongodb.net/?retryWrites=true&w=majority"
 
 
 ca = certifi.where()

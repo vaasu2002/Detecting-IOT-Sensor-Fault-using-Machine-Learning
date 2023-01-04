@@ -9,11 +9,9 @@ These sensors provide the company with real-time data. As these machines usually
 To save cost and labour the company wants engineers to be sure about condition of air pressure system.  So now we have a binary classification problem in which the affirmative class indicates that the anomaly was caused by a certain component of the APS, while the negative class indicates that the anomaly was caused by something else. If the anomaly was caused by APS component then engineers  will repair or replace it.
 
 #### Objective
-
+- Develop a machine learning model that can predict IOT sensor faults.
 - Building a robust machine learning training pipeline.
 - When new training data becomes available, a workflow that includes data validation, preprocessing, model training, analysis, and deployment will be triggered.
-- The final mode will be pushed into the S3 bucket. When the new model is trained the EC2 instance will compare the default model(which is already in S3) with newly trained validation data. If the new model performs better than the previous one, it will be pushed to S3 and the previous one will be deleted.
-
 
 Step 1
 ```

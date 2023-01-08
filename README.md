@@ -30,7 +30,7 @@ conda activate sensors/
 ```
 Step 4
 ```
-python setup.py install
+pip install -r requirements.txt
 ```
 
 

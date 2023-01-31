@@ -22,6 +22,12 @@ Step 2
 ```
 conda create -p sensors python==3.7.6 -y
 ```
+<p align="center">or</p>
+
+```bash
+conda create --prefix ./env python=3.7 -y
+```
+
 Step 3
 ```
 conda activate sensors/

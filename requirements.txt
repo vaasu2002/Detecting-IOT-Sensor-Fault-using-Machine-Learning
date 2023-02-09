@@ -4,5 +4,7 @@ pandas
 scipy
 dill
 PyYAML
+certifi
 imblearn
+xgboost
 -e .

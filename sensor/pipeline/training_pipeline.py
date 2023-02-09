@@ -79,18 +79,6 @@ class TrainPipeline:
         except Exception as e:
             raise SensorException(e,sys) 
     
-    def start_data_evaluation(self):
-        try:
-            pass
-        except Exception as e:
-            raise SensorException(e,sys) 
-    
-    def start_data_pusher(self):
-        try:
-            pass
-        except Exception as e:
-            raise SensorException(e,sys) 
-    
     def run_pipeline(self):
         try:
             data_ingestion_artifact:DataIngestionArtifact = self.start_data_ingestion()

@@ -13,12 +13,12 @@ To save cost and labour the company wants engineers to be sure about condition o
 - Building a robust machine learning training pipeline.
 - When new training data becomes available, a workflow that includes data validation, preprocessing, model training, analysis, and deployment will be triggered.
 
-Step 1
+*Step 1 - Copying repo in local machine*
 ```bash
 git clone https://github.com/vaasu2002/Detecting-IOT-Sensor-Failures-using-Machine-Learning.git
 ```
 
-Step 2 - Create a conda environment
+*Step 2 - Create a conda environment*
 ```bash
 conda create -p sensors python==3.7.6 -y
 ```
@@ -27,7 +27,7 @@ conda create -p sensors python==3.7.6 -y
 ```bash
 conda create --prefix ./env python=3.7 -y
 ```
-Step 3 - Activate the conda environment
+*Step 3 - Activate the conda environment*
 ```
 conda activate sensors/
 ```
@@ -36,7 +36,7 @@ conda activate sensors/
 ```bash
 source activate ./env
 ```
-Step 4
+*Step 4 - Installing dependencies*
 ```
 pip install -r requirements.txt
 ```

@@ -34,11 +34,18 @@ conda activate sensors/
 <p align="center">or</p>
 
 ```bash
-source activate ./env
+source activate ./sensors
 ```
 *Step 4 - Installing dependencies*
 ```
 pip install -r requirements.txt
+```
+
+*Step 5 - Exporting the environment variable*
+```bash
+export AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
+export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
+export AWS_DEFAULT_REGION=<AWS_DEFAULT_REGION>
 ```
 
 

@@ -13,6 +13,9 @@ To save cost and labour the company wants engineers to be sure about condition o
 - Building a robust machine learning training pipeline.
 - When new training data becomes available, a workflow that includes data validation, preprocessing, model training, analysis, and deployment will be triggered.
 
+
+### Description
+We build a machine learning training pipeline that can adapt to new data over time, ensuring that our models are always accurate and up to date. By doing so, we aim to improve the performance of our models, reduce the risk of making incorrect predictions, and increase the overall value of our machine learning system. Ultimately, we hope that our pipeline will enable us to make better, data-driven decisions that can drive business success and create real-world impact.
 *Step 1 - Copying repo in local machine*
 ```bash
 git clone https://github.com/vaasu2002/Detecting-IOT-Sensor-Failures-using-Machine-Learning.git
